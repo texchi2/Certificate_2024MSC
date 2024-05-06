@@ -1,0 +1,292 @@
+\documentclass[a4paper, landscape]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{svg, pgffor} % pgffor package for loop
+
+
+\geometry{
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+}
+
+\title{Certificate Taiwan---Somaliland 2024MSC}
+\author{Li-Hsing Chi}
+\date{May 2024}
+
+% define staff list
+%\newcommand{\staffs}[1]{Abdi Fataax Jibriil Maxamed}
+
+%Here is a LaTeX script with the topics from the agenda as a list of \or options that can be used with \ifcase:
+
+\newcommand{\topic}[1]{
+
+\ifcase#1
+
+%\or Opening Ceremony
+
+\or Lingual Thyroid Gland: A Case Report in Somaliland
+
+%\or Master of 2023MSC
+
+%%
+
+\or History of Hemodialysis in Somaliland  
+
+\or Organ Transplantation in Wan Fang Hospital
+
+%\or History of Hemodialysis in Somaliland 
+
+\or Treatment of Acute Ischemic Stroke in Taiwan
+
+\or Cancer Epidemiology in Somaliland 
+
+\or The prevalence and Associated Factors of Goiter Among Women in Hargeisa Group Hospital Surgical Clinic in Hargeisa, Somaliland
+
+\or Common Diseases in Otolaryngology (ENT) and ENT Training Program at Wan Fang Hospital
+
+\or Maxillofacial Care for Gunshot Patients in Somaliland
+
+
+\or The Current State of Neurosurgery in Somaliland
+
+\or Forensic Medicine in Somaliland  
+
+\or Orthopedic Care for Gunshot Patients in Somaliland
+
+\or Management of Trauma Patient in Taiwan Emergency Department
+
+\or Tackling Non-communicable Diseases in Somaliland
+
+\or Medical Education and Internship Training in Somaliland
+
+\fi
+
+}
+
+%Let me know if you need any corrections or changes to this list of topics!
+
+% HASSAN MOHAMOUD NOUR
+%\or Dr. Mohamed Abdi Hergeye
+%\or Amb. Allen Lou
+
+\newcommand{\speakerName}[1]{
+
+\ifcase#1
+
+\or Dr. Tex Li-Hsing Chi
+%\or Dr. Hassan Mohamoud Nour
+
+\or Dr. Ahmed Wali
+\or Dr. Ming-Che Lee  
+\or Dr. Chin-I Chen   
+\or Dr. Omar Marshal
+\or Dr. Afnan Abdirahman Nuh %Adnan Sayid Abdo
+\or Dr. Shih-Han Hung
+\or Dr. Abdirahim Uurcade
+\or Dr. Abdulhamid Mohamed Ali Suleman
+\or Dr. Ahmed Omar Askar  
+\or Dr. Ahmed Saed Ali
+\or Dr. Yun-yu (Cloud) Wu
+\or Dr. Ahmed Hersi %Dr. Abdirahman Madar
+\or Dr. Jinaw Mohamed Qalib
+
+\fi
+
+}
+
+%  chatGPT: for our blood donation campaign of Hargeisa Group Hospital in the 2023 World Blood Donor Day (14 June 2023), we will prepare a certificate for all staff working in that campaign. Please write this certificate for us (Taiwan Medical Mission (TMM) in the Republic of Somaliland, and Hargeisa Group Hospital (HGH)); it will be signed by both Dr. Tex Li-Hsing Chi (chief of TMM), Dr. Ahmed Omar Askar (director of HGH), and director of Blood Bank in HGH.
+
+%\maketitle
+
+
+
+
+\begin{document}
+\pagestyle{empty} % removal of page numbering
+
+% first page for Dr. Hassan
+
+\begin{tikzpicture}[remember picture,overlay]
+  \draw[line width=4pt]
+    ([xshift=15mm,yshift=-15mm]current page.north west)
+    rectangle
+    ([xshift=-15mm,yshift=15mm]current page.south east);
+  \draw[line width=2pt,rounded corners=15pt,double]
+    ([xshift=17.5mm,yshift=-17.5mm]current page.north west)
+    rectangle
+    ([xshift=-17.5mm,yshift=17.5mm]current page.south east);
+\end{tikzpicture}
+
+%% Hargeisa_Group_Hospital_logo
+\noindent
+\raisebox{-0.0\height}{\includesvg[width=0.2\textwidth]{Flag_of_Somaliland.svg}}
+\hfill
+\raisebox{-0.0\height}{\includesvg[width=0.26\textwidth]{Flag_of_the_Republic_of_China.svg}}
+
+\vspace{0.1cm}
+
+%%
+
+
+\begin{center}
+
+{\Huge\textbf{Certificate of Appreciation}}\\[0.6cm]
+
+\raisebox{-0.6\height}{\includesvg[width=0.09\textwidth]{TMM_logo.svg}}  \hspace{0.3cm}
+This certificate is presented to \hspace{0.3cm}
+\raisebox{-0.6\height}{\includesvg[width=0.09\textwidth]{logo_MoHD_HGH.svg}} \\[0.4cm]
+
+% Dr. Tex Chi
+{\Huge\underline{Dr. Hassan Mohamoud Nour}}\\[0.2cm]
+%{\LARGE\textbf{[Recipient's Name]}}\\[0.7cm]
+
+% \hspace{10cm}
+
+
+\begin{flushleft}
+\Large
+
+
+%\textbf{\}
+
+\vspace{0.5cm}
+
+In recognition of your contribution on\\
+
+\textbf{the Master of 2024MSC}
+
+\vspace{0.5cm} 
+
+at the 2024 Multi-Specialty Conference (2024MSC) held in Hargeisa, Somaliland on 11 May, 2024.
+
+%\vspace{1cm}
+
+We greatly appreciate you sharing your knowledge and expertise. Thank you for your contribution!
+
+%\vspace{3cm}
+\end{flushleft}\\[0.5cm]
+
+%We thank him for his dedication and hard work. \\[1cm]
+
+
+\large
+Chair of 2024MSC: Dr. Tex Li-Hsing Chi, DDS., Ph.D.\\
+Taiwan Medical Mission in the Republic of Somaliland
+
+\end{center}
+
+
+
+\clearpage
+
+
+
+
+
+%%% a foreach loop (for loop)
+% produce 22 certificates for all speakers
+\foreach \x in {1,...,14} {
+
+
+\fontsize{20}{24}\selectfont
+
+% first page is unique for Dr. Dave Lin, Dr. Cloud Wu., and Dr. .....
+% RN. Josh Huang, Miss Cecilia Cheng
+
+
+\begin{tikzpicture}[remember picture,overlay]
+  \draw[line width=4pt]
+    ([xshift=15mm,yshift=-15mm]current page.north west)
+    rectangle
+    ([xshift=-15mm,yshift=15mm]current page.south east);
+  \draw[line width=2pt,rounded corners=15pt,double]
+    ([xshift=17.5mm,yshift=-17.5mm]current page.north west)
+    rectangle
+    ([xshift=-17.5mm,yshift=17.5mm]current page.south east);
+\end{tikzpicture}
+
+%% Hargeisa_Group_Hospital_logo
+\noindent
+\raisebox{-0.0\height}{\includesvg[width=0.2\textwidth]{Flag_of_the_Republic_of_China.svg}}
+\hfill
+\raisebox{-0.0\height}{\includesvg[width=0.26\textwidth]{Flag_of_Somaliland.svg}}
+
+\vspace{0.1cm}
+
+%%
+
+
+\begin{center}
+
+{\Huge\textbf{Certificate of Appreciation}}\\[0.6cm]
+
+\raisebox{-0.6\height}{\includesvg[width=0.09\textwidth]{TMM_logo.svg}}  \hspace{0.3cm}
+This certificate is presented to \hspace{0.3cm}
+\raisebox{-0.6\height}{\includesvg[width=0.09\textwidth]{logo_MoHD_HGH.svg}} \\[0.4cm]
+
+% Dr. Tex Chi
+{\Huge\underline{\speakerName{\x}}}\\[0.2cm]
+%{\LARGE\textbf{[Recipient's Name]}}\\[0.7cm]
+
+% \hspace{10cm}
+
+
+\begin{flushleft}
+\Large
+
+
+%\textbf{\}
+
+\vspace{0.5cm}
+
+In recognition of your presentation on\\
+
+\textbf{\topic{\x}}
+
+\vspace{0.5cm} 
+
+at the 2023 Multi-Specialty Conference (2023MSC) held in Hargeisa, Somaliland on August 13-14, 2023.
+
+%\vspace{1cm}
+
+We greatly appreciate you sharing your knowledge and expertise. Thank you for your contribution!
+
+%\vspace{3cm}
+\end{flushleft}\\[0.5cm]
+
+%We thank him for his dedication and hard work. \\[1cm]
+
+
+\large
+Chair of 2023MSC: Dr. Tex Li-Hsing Chi, DDS., Ph.D.\\
+Taiwan Medical Mission in the Republic of Somaliland
+
+\end{center}
+
+
+
+\clearpage
+
+
+} % end of for loop
+
+
+%%
+
+
+%\begin{tikzpicture}[remember picture,overlay]
+%  \draw[line width=4pt]
+%    ([xshift=15mm,yshift=-15mm]current page.north west)
+%    rectangle
+%    ([xshift=-15mm,yshift=15mm]current page.south east);
+%\end{tikzpicture}
+
+
+
+
+\end{document}
+
+

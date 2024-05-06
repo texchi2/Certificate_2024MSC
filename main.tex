@@ -1,0 +1,387 @@
+\documentclass[a4paper, landscape]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{svg, pgffor} % pgffor package for loop
+
+
+\geometry{
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+}
+
+\title{Certificate TMM2023}
+\author{Li-Hsing Chi}
+\date{June 2023}
+
+% define staff list
+%\newcommand{\staffs}[1]{Abdi Fataax Jibriil Maxamed}
+
+\newcommand{\members}[1]{%
+    \ifcase#1
+    \or Dr. Tex Li-Hsing Chi
+    \or Dr. Wei-Lin Lin
+    \or Miss Cecilia Shu-Ying Cheng
+    \or RN. Josh Huang
+    \or Dr. HASSAN MOHAMOUD NOUR %XASAN MAXAMUUD NUUR
+    \or Mr. CABDILAAHI CABDI DUCAALE
+    \or Mr. ABDIRAHMAN ABIB DIRIYE %Abdirahman Abib Diriye
+    \or Mr. SAID MOHAMOOD JAMA %Saed Mohamoud Jama
+    \fi
+}
+
+\newcommand{\staffs}[1]{%
+    \ifcase#1
+    \or Tex Li-Hsing Chi
+    \or Wei-Lin Lin
+    \or Cecilia Shu-Ying Cheng
+    \or Josh Huang
+    \or Abdi Fataax Jibriil Maxamed
+    \or Mukhtaar C.rashid Adan
+    \or Nadira Maxamed Cabdi
+    \or Madar Cumar Madar
+    \or Sucad Maxamed Cabaase
+    \or Deeqa Cawad Muuse
+    \or Fadxiya Maxamed C.lahi
+    \or C.raxmaan Cali Muxumed
+    \or Sabax C.ladiif Cisman
+    \or Najma Faysal Xuseen
+    \or C.rashid Cumar Muxumed
+    \or Sadam Maxamed Xasan
+    \or A.fatax Xasan Adan
+    \or Ismacil Axmed Abokor
+    \or Shucayb Haybe Cabdi 
+    \or Yahye Maxamed Muxumed
+    \or Ugbaad Axmed Jamac 
+    \or Maryan Maxamuud Yonis
+    \fi
+}
+
+%  chatGPT: for our blood donation campaign of Hargeisa Group Hospital in the 2023 World Blood Donor Day (14 June 2023), we will prepare a certificate for all staff working in that campaign. Please write this certificate for us (Taiwan Medical Mission (TMM) in the Republic of Somaliland, and Hargeisa Group Hospital (HGH)); it will be signed by both Dr. Tex Li-Hsing Chi (chief of TMM), Dr. Ahmed Omar Askar (director of HGH), and director of Blood Bank in HGH.
+
+%\maketitle
+
+
+
+
+\begin{document}
+\pagestyle{empty} % removal of page numbering
+\fontsize{20}{24}\selectfont
+
+% first page is unique for Dr. Dave Lin, Dr. Cloud Wu., and Dr. .....
+% RN. Josh Huang, Miss Cecilia Cheng
+
+
+\begin{tikzpicture}[remember picture,overlay]
+  \draw[line width=4pt]
+    ([xshift=15mm,yshift=-15mm]current page.north west)
+    rectangle
+    ([xshift=-15mm,yshift=15mm]current page.south east);
+  \draw[line width=2pt,rounded corners=15pt,double]
+    ([xshift=17.5mm,yshift=-17.5mm]current page.north west)
+    rectangle
+    ([xshift=-17.5mm,yshift=17.5mm]current page.south east);
+\end{tikzpicture}
+
+%% Hargeisa_Group_Hospital_logo
+\noindent
+\raisebox{-0.0\height}{\includesvg[width=0.2\textwidth]{Flag_of_the_Republic_of_China.svg}}
+\hfill
+\raisebox{-0.0\height}{\includesvg[width=0.26\textwidth]{Flag_of_Somaliland.svg}}
+
+\vspace{0.1cm}
+
+%%
+
+
+\begin{center}
+
+{\Huge\textbf{Certificate of Appreciation}}\\[0.6cm]
+
+\raisebox{-0.6\height}{\includesvg[width=0.09\textwidth]{TMM_logo.svg}}  \hspace{0.3cm}
+This is to certify that \hspace{0.3cm}
+\raisebox{-0.6\height}{\includesvg[width=0.09\textwidth]{logo_MoHD_HGH.svg}} \\[0.4cm]
+
+% Abdilahi
+{\Huge\underline{\members{6},}}\\[0.2cm]
+%{\LARGE\textbf{[Recipient's Name]}}\\[0.7cm]
+
+% \hspace{10cm}
+
+
+\begin{flushleft}
+\Large
+% Wan Fang Hospital - Management by Taipei Medical University
+a best driver at Hargeisa Group Hospital, performs well as a staff of the Taiwan Medical Mission in the Republic of Somaliland since 28 July, 2022.
+%from April 14th to July 14th, 2023.
+
+
+%In recognition of your valuable contribution to the blood donation campaign at Hargeisa Group Hospital on World Blood Donor Day, 14 June 2023. Your dedication and hard work have helped to save lives and make a positive difference in our community. Your efforts to promote blood donation in Somaliland are greatly appreciated.
+\end{flushleft}\\[0.5cm]
+
+We thank him for his dedication and hard work. \\[1cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+Dr. Ahmed Omar Askar \\
+Director of Hargeisa Group Hospital\\
+%Amb. Allen Lou \\
+%Ambassador of Taiwan Representative Office \\
+in the Republic of Somaliland \\
+%in the Republic of Somaliland
+
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+Dr. Mohamed Abdi Hergeye\\
+Director General \\
+Ministry of Health Development \\
+in the Republic of Somaliland
+
+\end{flushright}
+\end{minipage}\\[0.5cm]
+
+\large
+Dr. Tex Li-Hsing Chi\\
+Chief of Taiwan Medical Mission\\
+in the Republic of Somaliland
+
+\end{center}
+
+
+
+%%%%
+\clearpage
+
+
+\begin{tikzpicture}[remember picture,overlay]
+  \draw[line width=4pt]
+    ([xshift=15mm,yshift=-15mm]current page.north west)
+    rectangle
+    ([xshift=-15mm,yshift=15mm]current page.south east);
+  \draw[line width=2pt,rounded corners=15pt,double]
+    ([xshift=17.5mm,yshift=-17.5mm]current page.north west)
+    rectangle
+    ([xshift=-17.5mm,yshift=17.5mm]current page.south east);
+\end{tikzpicture}
+
+%% Hargeisa_Group_Hospital_logo
+\noindent
+\raisebox{-0.0\height}{\includesvg[width=0.2\textwidth]{Flag_of_the_Republic_of_China.svg}}
+\hfill
+\raisebox{-0.0\height}{\includesvg[width=0.26\textwidth]{Flag_of_Somaliland.svg}}
+
+\vspace{0.1cm}
+
+%%
+
+
+\begin{center}
+
+{\Huge\textbf{Certificate of Appreciation}}\\[0.6cm]
+
+\raisebox{-0.6\height}{\includesvg[width=0.09\textwidth]{TMM_logo.svg}}  \hspace{0.3cm}
+This certificate is awarded to \hspace{0.3cm}
+\raisebox{-0.6\height}{\includesvg[width=0.09\textwidth]{logo_MoHD_HGH.svg}} \\[0.4cm]
+
+% Dr. Hassan
+{\Huge\underline{\members{5,}}}\\[0.2cm]
+%{\LARGE\textbf{[Recipient's Name]}}\\[0.7cm]
+
+% \hspace{10cm}
+
+
+\begin{flushleft}
+\Large
+in recognition of his outstanding performance as a valuable friend and working partner to the Taiwan Medical Mission at Hargeisa Group Hospital since 28 July 2022, he has consistently demonstrated excellence in his work.
+We are proud and sincerely thank him for his contributions to our mission.
+
+%We thank him for his dedication and hard work.
+% to recognize Dr. Xasan as the best doctor at Hargeisa Group Hospital, 
+\end{flushleft}\\[0.3cm]
+
+%We thank him for his dedication and hard work. \\[1cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+Dr. Ahmed Omar Askar \\
+Director of Hargeisa Group Hospital\\
+%Amb. Allen Lou \\
+%Ambassador of Taiwan Representative Office \\
+in the Republic of Somaliland \\
+%in the Republic of Somaliland
+
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+Dr. Mohamed Abdi Hergeye\\
+Director General \\
+Ministry of Health Development \\
+in the Republic of Somaliland
+
+\end{flushright}
+\end{minipage}\\[0.5cm]
+
+\large
+Dr. Tex Li-Hsing Chi\\
+Chief of Taiwan Medical Mission\\
+in the Republic of Somaliland
+
+\end{center}
+
+
+%%%
+\clearpage
+
+
+\begin{tikzpicture}[remember picture,overlay]
+  \draw[line width=4pt]
+    ([xshift=15mm,yshift=-15mm]current page.north west)
+    rectangle
+    ([xshift=-15mm,yshift=15mm]current page.south east);
+  \draw[line width=2pt,rounded corners=15pt,double]
+    ([xshift=17.5mm,yshift=-17.5mm]current page.north west)
+    rectangle
+    ([xshift=-17.5mm,yshift=17.5mm]current page.south east);
+\end{tikzpicture}
+
+%% Hargeisa_Group_Hospital_logo
+\noindent
+\raisebox{-0.0\height}{\includesvg[width=0.2\textwidth]{Flag_of_the_Republic_of_China.svg}}
+\hfill
+\raisebox{-0.0\height}{\includesvg[width=0.26\textwidth]{Flag_of_Somaliland.svg}}
+
+\vspace{0.1cm}
+
+%%
+
+
+\begin{center}
+
+{\Huge\textbf{Certificate of Appreciation}}\\[0.6cm]
+
+\raisebox{-0.6\height}{\includesvg[width=0.09\textwidth]{TMM_logo.svg}}  \hspace{0.3cm}
+This is to certify that \hspace{0.3cm}
+\raisebox{-0.6\height}{\includesvg[width=0.09\textwidth]{logo_MoHD_HGH.svg}} \\[0.4cm]
+
+% Mr. Abdilahman Abib our landlord
+{\Huge\underline{\members{7}}}\\[0.2cm]
+%{\LARGE\textbf{[Recipient's Name]}}\\[0.7cm]
+
+% \hspace{10cm}
+
+
+\begin{flushleft}
+\Large
+% Wan Fang Hospital - Management by Taipei Medical University
+We want to express our heartfelt gratitude for your support in providing us with a safe house as a dormitory. Your kindness and generosity have significantly impacted our lives, and we are deeply grateful for your help.
+
+Thank you for being such an outstanding landlord and for all you do to make our stay comfortable and secure. We appreciate your support and are grateful to have you as a friend.
+
+%In recognition of your valuable contribution to the blood donation campaign at Hargeisa Group Hospital on World Blood Donor Day, 14 June 2023. Your dedication and hard work have helped to save lives and make a positive difference in our community. Your efforts to promote blood donation in Somaliland are greatly appreciated.
+\end{flushleft}\\[0.5cm]
+
+%We thank him for his dedication and hard work. \\[1cm]
+
+
+%\begin{minipage}{0.4\textwidth}
+%\begin{flushleft} \large
+%Dr. Ahmed Omar Askar \\
+%Director of Hargeisa Group Hospital\\
+%Amb. Allen Lou \\
+%Ambassador of Taiwan Representative Office \\
+%in the Republic of Somaliland \\
+%in the Republic of Somaliland
+
+%\end{flushleft}
+%\end{minipage}
+%~
+%\begin{minipage}{0.4\textwidth}
+%\begin{flushright} \large
+%Dr. Mohamed Abdi Hergeye\\
+%Director General \\
+%Ministry of Health Development \\
+%in the Republic of Somaliland
+
+%\end{flushright}
+%\end{minipage}\\[0.5cm]
+
+\large
+Dr. Tex Li-Hsing Chi\\
+Chief of Taiwan Medical Mission\\
+in the Republic of Somaliland
+
+\end{center}
+
+
+%%%
+\clearpage
+
+
+\begin{tikzpicture}[remember picture,overlay]
+  \draw[line width=4pt]
+    ([xshift=15mm,yshift=-15mm]current page.north west)
+    rectangle
+    ([xshift=-15mm,yshift=15mm]current page.south east);
+  \draw[line width=2pt,rounded corners=15pt,double]
+    ([xshift=17.5mm,yshift=-17.5mm]current page.north west)
+    rectangle
+    ([xshift=-17.5mm,yshift=17.5mm]current page.south east);
+\end{tikzpicture}
+
+%% Hargeisa_Group_Hospital_logo
+\noindent
+\raisebox{-0.0\height}{\includesvg[width=0.2\textwidth]{Flag_of_the_Republic_of_China.svg}}
+\hfill
+\raisebox{-0.0\height}{\includesvg[width=0.26\textwidth]{Flag_of_Somaliland.svg}}
+
+\vspace{0.1cm}
+
+%%
+
+
+\begin{center}
+
+{\Huge\textbf{Certificate of Appreciation}}\\[0.6cm]
+
+\raisebox{-0.6\height}{\includesvg[width=0.09\textwidth]{TMM_logo.svg}}  \hspace{0.3cm}
+This is to certify that \hspace{0.3cm}
+\raisebox{-0.6\height}{\includegraphics[width=0.09\textwidth]{Cafè_Barbera_Hargeisa.jpeg}} \\[0.4cm]
+
+% Mr. Saed at Cafè Barbera Hargeisa
+{\Huge\underline{\members{8}}}\\[0.2cm]
+%{\LARGE\textbf{[Recipient's Name]}}\\[0.7cm]
+
+% \hspace{10cm}
+
+
+\begin{flushleft}
+\Large
+% Wan Fang Hospital - Management by Taipei Medical University
+In honor of how well you worked with the help of the Taiwan Medical Mission team while living in the Republic of Somaliland since July 28, 2022.
+
+At Cafè Barbera Hargeisa, Mr. Said was one of our best friends. You always helped us listen and give good comments.
+
+%from April 14th to July 14th, 2023.
+
+
+%In recognition of your valuable contribution to the blood donation campaign at Hargeisa Group Hospital on World Blood Donor Day, 14 June 2023. Your dedication and hard work have helped to save lives and make a positive difference in our community. Your efforts to promote blood donation in Somaliland are greatly appreciated.
+\end{flushleft}\\[0.5cm]
+
+%We thank him for his dedication and nice work. \\[1cm]
+
+
+\large
+Dr. Tex Li-Hsing Chi\\
+Chief of Taiwan Medical Mission\\
+in the Republic of Somaliland
+
+\end{center}
+
+\end{document}
